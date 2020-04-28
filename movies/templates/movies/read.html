@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>All Movies</title>
+
+</head>
+<body>
+    
+    <h1>This is the list of all movies:</h1>
+
+
+    {% for movie in movies %}
+
+        <ul> {{ movie.title }}
+            <li>{{ movie.synopsys }}</li>
+            <li>{{ movie.release_year }}</li>
+            <li>{{ movie.duration }}</li>
+        </ul>
+
+    {% endfor %}
+
+
+</body>
+</html>
